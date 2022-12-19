@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "title": "FIFA 23",
+    "price": "$6300",
+    "img": "FIFA23.jpg"
+  },
+  {
+    "id": "2",
+    "title": "GOW Ragnarok",
+    "price": "$7599",
+    "img": "GoW R.jpg"
+  },
+  {
+    "id": "3",
+    "title": "The Witcher 3",
+    "price": "$3299",
+    "img": "TWitcher3.jpg"
+  },
+  {
+    "id": "4",
+    "title": "GTA V",
+    "price": "$3799",
+    "img": "Gta.jpg"
+  },
+  {
+    "id": "5",
+    "title": "Avengers",
+    "price": "$2899",
+    "img": "Avengers.png"
+  },
+  {
+    "id": "6",
+    "title": "Battlefield V",
+    "price": "$3199",
+    "img": "BattlefieldV.jpg"
+  },
+  {
+    "id": "7",
+    "title": "SW: Jedi Fallen Order",
+    "price": "$4099",
+    "img": "JediFO.jpg"
+  },
+  {
+    "id": "8",
+    "title": "Mafia II",
+    "price": "$3499",
+    "img": "Mafia II.jpg"
+  },
+  {
+    "id": "9",
+    "title": "MK 11 Ultimate",
+    "price": "$4499",
+    "img": "Mk 11.jpg"
+  },
+  {
+    "id": "10",
+    "title": "Call of Duty MW 2",
+    "price": "$7199",
+    "img": "MW2.jpg"
+  },
+  {
+    "id": "11",
+    "title": "NBA 2k23",
+    "price": "$5399",
+    "img": "NBA2K23.jpg"
+  },
+  {
+    "id": "12",
+    "title": "The Forest",
+    "price": "$3499",
+    "img": "TheForest.jpg"
+  },
+  {
+    "id": "13",
+    "title": "Watch Dogs LEGION",
+    "price": "$4199",
+    "img": "Watch Dogs-Legion.png"
+  },
+  {
+    "id": "14",
+    "title": "SipderMan Miles Morales",
+    "price": "$6099",
+    "img": "Spiderman-MM.png"
+  },
+  {
+    "id": "15",
+    "title": "Crash Bandicoot 4",
+    "price": "$4999",
+    "img": "Crash-Bandicoot.png"
+  },
+  {
+    "id": "16",
+    "title": "AC: Valhalla",
+    "price": "$5099",
+    "img": "Assassins Creed-VHL.png"
+  }
+]

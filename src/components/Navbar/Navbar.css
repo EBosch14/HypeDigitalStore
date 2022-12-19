@@ -1,0 +1,39 @@
+.Navbar{
+    background-color: #f5bb00;
+    width: 100%;
+    height: 8.8rem;
+    font-size: 2.4em;
+    display: flex;
+}
+
+.Navbar div{
+    position: relative;
+    left: 70vw;
+    height: 100%;
+    line-height: 8.8rem;
+}
+
+.Navbar .List{
+    flex: 1 1 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.Navbar .List .ItemList{
+    color: black;
+}
+
+.Navbar .List .ItemList a{
+    display: inline-block;
+    height: 100%;
+    padding: 0 2.5rem;
+    line-height: 8.8rem;
+    transition: all .5s ease;
+}
+
+a:hover{
+    color: aliceblue;
+    background-color: #ec9f05;
+}
