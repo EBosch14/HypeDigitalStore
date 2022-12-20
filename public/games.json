@@ -3,96 +3,112 @@
     "id": "1",
     "title": "FIFA 23",
     "price": "$6300",
-    "img": "FIFA23.jpg"
+    "img": "FIFA23.jpg",
+    "category": ["singleplayer", "sport", "multiplayer"]
   },
   {
     "id": "2",
     "title": "GOW Ragnarok",
     "price": "$7599",
-    "img": "GoW R.jpg"
+    "img": "GoW R.jpg",
+    "category": ["singleplayer", "action", "rpg"]
   },
   {
     "id": "3",
     "title": "The Witcher 3",
     "price": "$3299",
-    "img": "TWitcher3.jpg"
+    "img": "TWitcher3.jpg",
+    "category": ["singleplayer", "action", "rpg", "sandbox"]
   },
   {
     "id": "4",
     "title": "GTA V",
     "price": "$3799",
-    "img": "Gta.jpg"
+    "img": "Gta.jpg",
+    "category": ["singleplayer", "action", "multiplayer", "rpg"]
   },
   {
     "id": "5",
     "title": "Avengers",
     "price": "$2899",
-    "img": "Avengers.png"
+    "img": "Avengers.png",
+    "category": ["singleplayer", "action", "rpg", "adventure"]
   },
   {
     "id": "6",
     "title": "Battlefield V",
     "price": "$3199",
-    "img": "BattlefieldV.jpg"
+    "img": "BattlefieldV.jpg",
+    "category": ["singleplayer", "action", "multiplayer", "shooter", "fps"]
   },
   {
     "id": "7",
     "title": "SW: Jedi Fallen Order",
     "price": "$4099",
-    "img": "JediFO.jpg"
+    "img": "JediFO.jpg",
+    "category": ["singleplayer", "action", "adventure"]
   },
   {
     "id": "8",
     "title": "Mafia II",
     "price": "$3499",
-    "img": "Mafia II.jpg"
+    "img": "Mafia II.jpg",
+    "category": ["singleplayer", "action", "sandbox", "multiplayer", "shooter"]
   },
   {
     "id": "9",
     "title": "MK 11 Ultimate",
     "price": "$4499",
-    "img": "Mk 11.jpg"
+    "img": "Mk 11.jpg",
+    "category": ["singleplayer", "action", "multiplayer", "fighting", "arcade"]
   },
   {
     "id": "10",
     "title": "Call of Duty MW 2",
     "price": "$7199",
-    "img": "MW2.jpg"
+    "img": "MW2.jpg",
+    "category": ["singleplayer", "action", "shooter", "multiplayer", "fps"]
   },
   {
     "id": "11",
     "title": "NBA 2k23",
     "price": "$5399",
-    "img": "NBA2K23.jpg"
+    "img": "NBA2K23.jpg",
+    "category": ["singleplayer", "sport", "multiplayer"]
   },
   {
     "id": "12",
     "title": "The Forest",
     "price": "$3499",
-    "img": "TheForest.jpg"
+    "img": "TheForest.jpg",
+    "category": ["singleplayer", "action", "sandbox", "survival", "horror"]
   },
   {
     "id": "13",
     "title": "Watch Dogs LEGION",
     "price": "$4199",
-    "img": "Watch Dogs-Legion.png"
+    "img": "Watch Dogs-Legion.png",
+    "category": ["singleplayer", "action", "multiplayer", "adventure", "sandbox", "rpg"]
   },
   {
     "id": "14",
     "title": "SipderMan Miles Morales",
     "price": "$6099",
-    "img": "Spiderman-MM.png"
+    "img": "Spiderman-MM.png",
+    "category": ["singleplayer", "action", "adventure", "sandbox"]
   },
   {
     "id": "15",
     "title": "Crash Bandicoot 4",
     "price": "$4999",
-    "img": "Crash-Bandicoot.png"
+    "img": "Crash-Bandicoot.png",
+    "category": ["singleplayer", "action", "adventure"]
   },
   {
     "id": "16",
     "title": "AC: Valhalla",
     "price": "$5099",
-    "img": "Assassins Creed-VHL.png"
+    "img": "Assassins Creed-VHL.png",
+    "category": ["singleplayer", "action", "adventure", "sandbox", "rpg"]
   }
 ]
