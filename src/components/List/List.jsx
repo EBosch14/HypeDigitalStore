@@ -8,6 +8,6 @@ export const List = ({ navItems }) => {
       </ul>
     );
   } else {
-    return <div>Cargando datos...</div>;
+    return <div></div>;
   }
 };

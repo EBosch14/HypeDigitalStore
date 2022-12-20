@@ -1,13 +1,13 @@
 import "./Navbar.css";
-import { List } from "../List/List";
 import { useState } from "react";
+import { List } from "../List/List";
 
 export const Navbar = () => {
   const [navItems, setNavItems] = useState([]);
 
   setTimeout(() => {
-    setNavItems(["Home", "Games", "About Us", "Sign Up"]);
-  }, 3500);
+    setNavItems(["home", "games", "about Us", "sign Up"]);
+  }, 1000);
 
   return (
     <nav className="Navbar">
