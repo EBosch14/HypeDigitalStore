@@ -11,17 +11,22 @@ export const Games = () => {
       const data = await resp.json();
       setGamesList(data);
     };
-    getGames();
+    setTimeout(() => {
+      getGames();
+    }, 3000);
+    return setGamesList(null);
   }, []);
 
   return (
-    <div className="Home">
-      <h1>Home</h1>
+    <div className="Game">
+      <h1>Games Catalog</h1>
       <main className="Catalog">
         <GameCard gamesList={gamesList} />
       </main>
       <div className="Cart">
-        <i className="fa-solid fa-cart-shopping"><span>1</span></i>
+        <i className="fa-solid fa-cart-shopping">
+          <span>1</span>
+        </i>
       </div>
     </div>
   );

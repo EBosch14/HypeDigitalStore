@@ -1,13 +1,13 @@
-.Home {
+.Game {
   margin: 2rem 4rem;
 }
 
-.Home h1 {
+.Game h1 {
   font-size: 4.8em;
   margin-bottom: 2rem;
 }
 
-.Home .Catalog {
+.Game .Catalog {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
