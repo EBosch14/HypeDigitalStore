@@ -1,21 +1,9 @@
 import "./Games.css";
 import { GameCard } from "../../GameCard/GameCard";
-import { useState, useEffect } from "react";
-
+import { useGameList } from "../../../Hooks/useGameList";
 export const Games = () => {
-  const [gamesList, setGamesList] = useState([]);
 
-  useEffect(() => {
-    const getGames = async () => {
-      const resp = await fetch("/games.json");
-      const data = await resp.json();
-      setGamesList(data);
-    };
-    setTimeout(() => {
-      getGames();
-    }, 3000);
-    return setGamesList(null);
-  }, []);
+  const gamesList = useGameList();
 
   return (
     <div className="Game">

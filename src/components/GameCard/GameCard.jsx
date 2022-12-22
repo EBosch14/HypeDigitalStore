@@ -1,7 +1,11 @@
 import { Loader } from "../Loader/Loader";
 import { Description } from "./Description";
+import { useGameList } from "../../Hooks/useGameList";
 
-export const GameCard = ({ gamesList }) => {
+export const GameCard = () => {
+  
+  const gamesList = useGameList();
+
   return (
     <>
       {gamesList ? (

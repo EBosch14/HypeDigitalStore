@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import { useState } from "react";
+import { useState} from "react";
 import { List } from "../List/List";
 
 export const Navbar = () => {
