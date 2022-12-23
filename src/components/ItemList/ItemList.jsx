@@ -5,7 +5,7 @@ export const ItemList = ({ navItems }) => {
     <>
       {navItems.map((el, i) => (
         <li className="ItemList" key={i}>
-          <Link to={`/${el.toLowerCase().replace(/\s/g, '')}`}>{el.toUpperCase()}</Link>
+          <Link className="Navbar__link" to={`/${el.toLowerCase().replace(/\s/g, '')}`}>{el.toUpperCase()}</Link>
         </li>
       ))}
     </>

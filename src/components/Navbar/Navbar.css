@@ -25,7 +25,7 @@
     color: black;
 }
 
-.Navbar .List .ItemList a{
+.Navbar .List .ItemList .Navbar__link{
     display: inline-block;
     height: 100%;
     padding: 0 2.5rem;
@@ -33,7 +33,7 @@
     transition: all .5s ease;
 }
 
-a:hover{
+.Navbar__link:hover{
     color: aliceblue;
     background-color: #ec9f05;
 }

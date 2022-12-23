@@ -1,3 +1,5 @@
+import "./GameCard.css";
+
 export const Description = ({ title, price }) => {
   return (
     <div className="GameCard__desc">

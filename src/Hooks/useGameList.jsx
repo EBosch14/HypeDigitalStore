@@ -1,4 +1,4 @@
-import { GamesListContext } from "../Context/GamesListContext";
 import { useContext } from "react";
+import { GameListContext } from "../Context/GameListContext";
 
-export const useGameList = () => useContext(GamesListContext);
+export const useGameList = () => useContext(GameListContext);

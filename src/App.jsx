@@ -5,38 +5,27 @@ import { Home } from "./components/Pages/Home/Home";
 import { Games } from "./components/Pages/Games/Games";
 import { SingUp } from "./components/Pages/SignUp/SignUp";
 import { AboutUs } from "./components/Pages/AboutUs/AboutUs";
-import { GamesListContext } from "./Context/GamesListContext";
+import { GlobalContext } from "./Context/GlobalContext";
 import { useState, useEffect } from "react";
+import { GameDetails } from "./components/GameDetails/GameDetails";
+import { ErrorPage } from "./components/Pages/ErrorPage/ErrorPage";
 
 function App() {
-
-  const [gamesList, setGamesList] = useState([]);
-
-  useEffect(() => {
-    const getGames = async () => {
-      const resp = await fetch("/games.json");
-      const data = await resp.json();
-      setGamesList(data);
-    };
-    setTimeout(() => {
-      getGames();
-    }, 1500);
-    return setGamesList(null);
-  }, []);
-
   return (
-    <GamesListContext.Provider value={gamesList}>
-      <BrowserRouter className="App">
+    <BrowserRouter className="App">
+      <GlobalContext>
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/games" element={<Games />} />
+          <Route exact path="/games/:gameId" element={<GameDetails />} />
           <Route exact path="/signup" element={<SingUp />} />
-          <Route exact path="/aboutus" element={<AboutUs/>}/>
+          <Route exact path="/aboutus" element={<AboutUs />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
-      </BrowserRouter>
-    </GamesListContext.Provider>
+      </GlobalContext>
+    </BrowserRouter>
   );
 }
 
