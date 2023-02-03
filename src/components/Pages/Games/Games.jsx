@@ -1,6 +1,8 @@
 import "./Games.css";
 import { GameCard } from "../../GameCard/GameCard";
 import { useGameList } from "../../../Hooks/useGameList";
+import {Cart} from "../../Cart/Cart"
+
 export const Games = () => {
 
   const gamesList = useGameList();
@@ -11,11 +13,7 @@ export const Games = () => {
       <main className="Catalog">
         <GameCard gamesList={gamesList} />
       </main>
-      <div className="Cart">
-        <i className="fa-solid fa-cart-shopping">
-          <span>1</span>
-        </i>
-      </div>
+      <Cart/>
     </div>
   );
 };
