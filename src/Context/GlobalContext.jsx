@@ -33,14 +33,14 @@ export function GlobalContext({ children }) {
 
     return categories;
   };
-  const [checkedState, setCheckedState] = useState([]);
+  const [categories, setCategories] = useState([]);
   
   useEffect(() => {
     const getGames = async () => {
       const resp = await fetch("/games.json");
       const data = await resp.json();
       setGamesList(data);
-      setCheckedState(filterCategories(data))
+      setCategories(filterCategories(data))
     };
     setTimeout(() => {
       getGames();
@@ -50,7 +50,7 @@ export function GlobalContext({ children }) {
 
   return (
     <GameListContext.Provider value={gamesList}>
-      <CategoriesContext.Provider value={{ checkedState, setCheckedState }}>
+      <CategoriesContext.Provider value={{ categories, setCategories }}>
         {children}
       </CategoriesContext.Provider>
     </GameListContext.Provider>

@@ -3,17 +3,17 @@ import { CategoriesContext } from "../Context/Contexts";
 
 
 export const useCategories = () => {
-  const { checkedState, setCheckedState } = useContext(CategoriesContext);
+  const { categories, setCategories } = useContext(CategoriesContext);
 
   const handleOnChange = (category) => {
-    const update = checkedState.map((el) => {
+    const update = categories.map((el) => {
       if (el.catID == category.catID) {
         el.selected = !el.selected;
       }
       return el;
     });
-    setCheckedState(update);
+    setCategories(update);
   };
 
-  return {handleOnChange, checkedState};
+  return {handleOnChange, categories};
 };

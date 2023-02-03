@@ -2,16 +2,16 @@ import { useEffect } from "react";
 import { useCategories } from "../../Hooks/useCategories";
 
 export const Categories = () => {
-  const {handleOnChange, checkedState} = useCategories();
-  useEffect(() => console.log(checkedState), [checkedState]);
+  const {handleOnChange, categories} = useCategories();
+  useEffect(() => console.log(categories), [categories]);
 
   return (
     <div className="Categories">
-      {checkedState.map((category, i) => {
+      {categories.map((category, i) => {
         return (
           <div className="Categories__items" key={category.catID}>
             <input
-              checked={checkedState.selected}
+              checked={categories.selected}
               onChange={() => handleOnChange(category)}
               type="checkbox"
               name={category.catID}

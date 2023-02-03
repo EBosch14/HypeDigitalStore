@@ -1,13 +1,28 @@
 import { CartIcon } from "../../svg/CartIcon";
-import "./Cart.css"
+import "./Cart.css";
+import { useState } from "react";
 
 export const Cart = () => {
-  let cartCount = 10;
-  
+  const [cartCount, setCartCount] = useState(12);
+  const [isOpended, setIsOpened] = useState(false);
+
+  const onOpenModal = () => {
+    setIsOpened(true);
+  };
+
+  const onCloseModal = () => {
+    setIsOpened(false);
+  };
   return (
-    <div className="Cart">
-      <CartIcon />
-      <span>{cartCount}</span>
-    </div>
+    <>
+      <div className="Cart" onClick={onOpenModal}>
+        <CartIcon />
+        <span>{cartCount}</span>
+      </div>
+      <dialog className="Modal" open={isOpended}>
+        <div>hola</div>
+        <button onClick={() => onCloseModal()}>E x i t</button>
+      </dialog>
+    </>
   );
 };
