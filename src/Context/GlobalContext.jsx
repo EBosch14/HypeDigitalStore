@@ -13,28 +13,21 @@ export function GlobalContext({ children }) {
       return auxCat.indexOf(el) === i;
     });
     
-    let categories = [];
-    
-    auxCat.forEach((el) => {
-      categories.push({
-        catID: el,
-        selected: false,
-      });
-    });
-    categories.sort((a, b) => {
-      if (a.catID > b.catID) {
+    auxCat.sort((a, b) => {
+      if (a > b) {
         return 1;
       }
-      if (a.catID < b.catID) {
+      if (a < b) {
         return -1;
       }
       return 0;
     });
 
-    return categories;
+    return auxCat;
   };
   const [categories, setCategories] = useState([]);
-  
+  const [selectedCategories, setSelectedCategories] = useState([]);
+
   useEffect(() => {
     const getGames = async () => {
       const resp = await fetch("/games.json");
@@ -50,7 +43,7 @@ export function GlobalContext({ children }) {
 
   return (
     <GameListContext.Provider value={gamesList}>
-      <CategoriesContext.Provider value={{ categories, setCategories }}>
+      <CategoriesContext.Provider value={{selectedCategories, setSelectedCategories, categories, setCategories }}>
         {children}
       </CategoriesContext.Provider>
     </GameListContext.Provider>
